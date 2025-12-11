@@ -7,7 +7,7 @@ import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 
-class `SaveUserNameUseCaseTest.kt` {
+class SaveUserNameUseCaseTest {
 
     private val repo = mock<UserRepository>()
     private val useCase = SaveUserNameUseCase(repo)

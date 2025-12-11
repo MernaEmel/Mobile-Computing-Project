@@ -7,7 +7,7 @@ import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 
-class `RemoveFavoriteUseCaseTest.kt` {
+class RemoveFavoriteUseCaseTest {
 
     private val repo = mock<FavoritesRepository>()
     private val useCase = RemoveFavoriteUseCase(repo)

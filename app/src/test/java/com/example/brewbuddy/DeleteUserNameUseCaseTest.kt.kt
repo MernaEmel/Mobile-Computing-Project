@@ -7,7 +7,7 @@ import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 
-class `DeleteUserNameUseCaseTest.kt` {
+class DeleteUserNameUseCaseTest {
 
     private val repo = mock<UserRepository>()
     private val useCase = DeleteUserNameUseCase(repo)

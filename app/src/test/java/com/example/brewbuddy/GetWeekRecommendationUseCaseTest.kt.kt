@@ -9,7 +9,7 @@ import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.whenever
 
-class `GetWeekRecommendationUseCaseTest.kt` {
+class GetWeekRecommendationUseCaseTest {
 
     private val repo = mock<CoffeeRepository>()
     private val useCase = GetWeekRecommendationUseCase(repo)
@@ -17,14 +17,13 @@ class `GetWeekRecommendationUseCaseTest.kt` {
     @Test
     fun `should return weekly recommendations`() = runTest {
         val list = listOf(
-            Coffee(1, "Mocha", 20.0),
-            Coffee(2, "Latte", 22.0)
+            Coffee(1, "Mocha", "desc", listOf("Coffee"), "", 20.0, CoffeeCategory.HOT),
+            Coffee(2, "Latte", "desc", listOf("Coffee", "Milk"), "", 22.0, CoffeeCategory.COLD)
         )
 
         whenever(repo.getWeekRecommendation()).thenReturn(list)
 
         val result = useCase()
-
         assertEquals(list, result)
     }
 }

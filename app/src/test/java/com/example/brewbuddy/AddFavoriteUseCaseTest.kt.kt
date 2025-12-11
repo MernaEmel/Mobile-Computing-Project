@@ -8,14 +8,14 @@ import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.verify
 
-class `AddFavoriteUseCaseTest.kt` {
+class AddFavoriteUseCaseTest {
 
     private val repo = mock<FavoritesRepository>()
     private val useCase = AddFavoriteUseCase(repo)
 
     @Test
     fun `should call addFavorite`() = runTest {
-        val fav = Favorite(1, "Latte")
+        val fav = Favorite(1, "Latte", null, 22.0, true)
         useCase(fav)
         verify(repo).addFavorite(fav)
     }
