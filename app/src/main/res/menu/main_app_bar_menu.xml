@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main_menu_notification"
+        android:icon="@drawable/ic_notifications_app_bar"
+        android:title="@string/main_menu_notifications"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/main_menu_more"
+        android:icon="@drawable/ic_more_app_bar"
+        android:title="@string/main_menu_more_item"
+        app:showAsAction="ifRoom">
+        <menu >
+            <item
+                android:id="@+id/main_menu_profile"
+                android:icon="@drawable/profile_placeholder"
+                android:title="@string/main_menu_profile_item"
+                />
+            <item
+                android:id="@+id/main_menu_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/main_menu_settings_item" />
+            <item
+                android:id="@+id/main_menu_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/main_menu_help_item" />
+            <item
+                android:id="@+id/main_menu_logoutBtn"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/main_menu_logout_item" />
+
+
+        </menu>
+    </item>
+
+</menu>

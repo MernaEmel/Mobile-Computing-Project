@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.brewbuddy.presentation.screens.Welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/welcome_screen" >
+        <action
+            android:id="@+id/toMainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/toEnterNameFragment"
+            app:destination="@id/enterNameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enterNameFragment"
+        android:name="com.example.brewbuddy.presentation.screens.entername.EnterNameFragment"
+        android:label="fragment_enter_name"
+        tools:layout="@layout/entername_screen" >
+        <action
+            android:id="@+id/toMainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.brewbuddy.presentation.screens.details_screen.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="coffee"
+            app:argType="com.example.brewbuddy.domain.model.Coffee"/>
+
+        <action
+            android:id="@+id/action_detailsFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.brewbuddy.presentation.screens.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/toEnterNameFragment"
+            app:destination="@id/enterNameFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.brewbuddy.presentation.screens.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <argument
+            android:name="coffeeId"
+            app:argType="integer" />
+        <argument
+            android:name="coffeeName"
+            app:argType="string" />
+        <argument
+            android:name="coffeePrice"
+            app:argType="float" />
+        <argument
+            android:name="quantity"
+            app:argType="integer" />
+        <argument
+            android:name="totalAmount"
+            app:argType="float" />
+        <argument
+            android:name="coffeeImage"
+            app:argType="string" />
+    </fragment>
+</navigation>

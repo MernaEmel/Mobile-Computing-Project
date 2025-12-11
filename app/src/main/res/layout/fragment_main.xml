@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.screens.MainFragment">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/main_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/main_app_bar_menu"
+        android:background="@color/main"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="16dp"
+        android:theme="@style/CustomPopupMenu"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:id="@+id/tv_main_app_bar_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/secondary"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main"
+        >
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_fragment_container_view"
+
+            />
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"
+        app:backgroundTint="@color/secondary"
+        app:itemIconTint="@color/ternary"
+        app:itemTextColor="@color/ternary"
+        app:labelVisibilityMode="labeled"
+        app:itemRippleColor="@color/transparent"
+        app:itemBackground="@color/transparent"
+        app:itemActiveIndicatorStyle="@color/transparent"
+        android:fitsSystemWindows="true"
+        />
+</LinearLayout>
