@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ☕ BrewBuddy
 
 **BrewBuddy** is a modern Android coffee ordering application built with Kotlin, featuring a clean architecture and intuitive user interface for coffee enthusiasts.
@@ -151,6 +152,10 @@ com.example.brewbuddy/
 
 ## 🧪 Testing
 
+This project includes **unit tests** and uses **Mockito** to mock dependencies.
+- **Mockito** is applied for testing the `getUserName()` method in the data layer.
+- **JUnit** tests are implemented for the core **use cases** to ensure proper functionality.
+
 Run tests using:
 
 ```bash
@@ -188,3 +193,6 @@ Project Link: [https://github.com/yourusername/BrewBuddy](https://github.com/you
 ---
 
 **Enjoy your coffee journey with BrewBuddy! ☕**
+=======
+# Mobile-Computing-Project
+>>>>>>> af046afd20a2efad14744d42bcf544685e34e611
