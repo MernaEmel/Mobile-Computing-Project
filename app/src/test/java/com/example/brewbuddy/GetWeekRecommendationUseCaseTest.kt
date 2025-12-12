@@ -2,6 +2,7 @@ package com.example.brewbuddy
 
 import com.example.brewbuddy.domain.model.Coffee
 import com.example.brewbuddy.domain.repository.CoffeeRepository
+import com.example.brewbuddy.domain.model.CoffeeCategory
 import com.example.brewbuddy.domain.usecase.home.GetWeekRecommendationUseCase
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals

@@ -10,7 +10,7 @@ import org.junit.Test
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.whenever
 
-class GetUserNameUseCaseTest {
+class GetUserNameUseCaseTest{
 
     private val repo = mock<UserRepository>()
     private val useCase = GetUserNameUseCase(repo)
