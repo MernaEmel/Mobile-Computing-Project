@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ☕ BrewBuddy
 
 **BrewBuddy** is a modern Android coffee ordering application built with Kotlin, featuring a clean architecture and intuitive user interface for coffee enthusiasts.
