@@ -1,7 +1,6 @@
+# ☕ Co/Choc
 
-# ☕ BrewBuddy
-
-**BrewBuddy** is a modern Android coffee ordering application built with Kotlin, featuring a clean architecture and intuitive user interface for coffee enthusiasts.
+**Co/Choc** is a modern Android coffee ordering application built with Kotlin, featuring a clean architecture and intuitive user interface for coffee enthusiasts.
 
 ## 📱 Features
 
@@ -21,7 +20,7 @@
 
 ## 🏗️ Architecture
 
-BrewBuddy follows **Clean Architecture** principles with clear separation of concerns:
+Co/Choc follows **Clean Architecture** principles with clear separation of concerns:
 
 ```
 app/
@@ -73,8 +72,8 @@ app/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/BrewBuddy.git
-   cd BrewBuddy
+   git clone https://github.com/yourusername/CoChoc.git
+   cd CoChoc
    ```
 
 2. **Open in Android Studio**
@@ -110,22 +109,21 @@ Fallback mechanism provides sample data when API is unavailable.
 
 ## 📁 Project Structure
 
-```
-com.example.brewbuddy/
+com.example.cochoc/
 ├── data/
-│   ├── local/database/     # Room database setup
-│   ├── remote/api/         # API services
-│   └── repository/impl/    # Repository implementations
-├── di/                     # Dependency injection modules
+│ ├── local/database/ # Room database setup
+│ ├── remote/api/ # API services
+│ └── repository/impl/ # Repository implementations
+├── di/ # Dependency injection modules
 ├── domain/
-│   ├── model/             # Domain models
-│   ├── repository/        # Repository interfaces
-│   └── usecase/           # Business logic use cases
+│ ├── model/ # Domain models
+│ ├── repository/ # Repository interfaces
+│ └── usecase/ # Business logic use cases
 └── presentation/
-    ├── screens/           # UI fragments
-    ├── viewmodel/         # ViewModels
-    └── components/        # Reusable UI components
-```
+├── screens/ # UI fragments
+├── viewmodel/ # ViewModels
+└── components/ # Reusable UI components
+`
 
 ## 🎨 UI/UX Features
 
@@ -134,6 +132,7 @@ com.example.brewbuddy/
 - **Gradient Backgrounds**: Beautiful coffee-themed gradients
 - **Responsive Design**: Optimized for various screen sizes
 - **Loading States**: Smooth loading indicators and progress bars
+  ```
 
 ## 🧪 Testing
 
@@ -159,25 +158,8 @@ The project follows:
 - MVVM pattern
 - Repository pattern
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Contact
-
-Project Link: [https://github.com/yourusername/BrewBuddy](https://github.com/yourusername/BrewBuddy)
-
----
-
-**Enjoy your coffee journey with BrewBuddy! ☕**
+**Enjoy your chocolate & coffee journey with CoChoc! 🍫☕**
 =======
 # Mobile-Computing-Project
->>>>>>> af046afd20a2efad14744d42bcf544685e34e611
+
