@@ -153,8 +153,8 @@ com.example.brewbuddy/
 ## 🧪 Testing
 
 This project includes **unit tests** and uses **Mockito** to mock dependencies.
-- **Mockito** is applied for testing the `getUserName()` method in the data layer.
-- **JUnit** tests are implemented for the core **use cases** to ensure proper functionality.
+- **Unit Tests** are written using JUnit to verify the core UseCases work correctly.
+- **Mockito** is used to mock repository dependencies, isolating business logic from database or network layers.
 
 Run tests using:
 
