@@ -19,21 +19,6 @@
 - **Favorites**: Your saved coffee preferences
 - **Orders**: Order history and tracking
 
-## 📸 Screenshots  
-
-| Splash Screen | Enter Name | Home Screen |
-|---------------|------------|-------------|
-| ![Splash](screenshots/splash.png) | ![Enter Name](screenshots/entername.png) | ![Home](screenshots/home.png) |
-
-| Menu Screen | Details Screen | Favorites |
-|-------------|----------------|-----------|
-| ![Menu](screenshots/menu.png) | ![Details](screenshots/details.png) | ![Favorites](screenshots/favorites.png) |
-
-| Orders |
-|--------|
-| <img src="screenshots/orders.png" alt="Orders" width="300"/> |
-
-
 ## 🏗️ Architecture
 
 BrewBuddy follows **Clean Architecture** principles with clear separation of concerns:
